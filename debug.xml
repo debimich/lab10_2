@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/some_transformer.xslt"?>
 <guesses type="array">
-  <guess type="integer">25</guess>
-  <guess type="float">13.0</guess>
-  <guess type="float">7.461538461538462</guess>
-  <guess type="float">5.406026962727994</guess>
-  <guess type="float">5.015247601944898</guess>
-  <guess type="float">5.000023178253949</guess>
+  <guess type="integer">2</guess>
+  <guess type="float">1.5</guess>
+  <guess type="float">1.4166666666666665</guess>
+  <guess type="float">1.4142156862745097</guess>
 </guesses>

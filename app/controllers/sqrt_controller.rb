@@ -18,7 +18,6 @@ class SqrtController < ApplicationController
       @result = xslt_transform(xml_response)
     elsif @side == 'client'
       @result = insert_browser_xslt(xml_response)
-      File.write('debug.xml', @result)
     end
   end
 
@@ -34,6 +33,7 @@ class SqrtController < ApplicationController
     doc = Nokogiri::XML(data)
     xslt = Nokogiri::XML::ProcessingInstruction.new(doc, 'xml-stylesheet', 'type="text/xsl" href="/some_transformer.xslt"')
     doc.root.add_previous_sibling(xslt)
+    File.write('debug.xml', doc.to_xml)
     doc.to_xml
   end
 end
