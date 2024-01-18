@@ -1,0 +1,10 @@
+<%= form_tag({controller: 'sqrt', action: 'view'}, :method => "get") do %>
+	<%= label_tag("Введите число:") %>
+	<%= text_field_tag(:v) %> <br/>
+	<label>Показать результат через:</label>
+    <select class="custom-select" name = "side">
+      <option value = "server">Server XSLT</option>
+      <option value = "client">Client XSLT</option>
+    </select> <br/>
+	<%= submit_tag("Вычислить корень") %>
+<% end %>
